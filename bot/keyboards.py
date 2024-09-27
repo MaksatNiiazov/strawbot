@@ -10,12 +10,12 @@ def get_equipment_info_keyboard():
     markup = ReplyKeyboardMarkup(resize_keyboard=True)
     markup.row(KeyboardButton("Узнать об оборудовании"), KeyboardButton("Отправить портфолио"))
     markup.row(KeyboardButton("Пройти опрос"))
-    markup.row(KeyboardButton("Главное меню"))
     return markup
 
 def get_yes_no_keyboard():
     markup = ReplyKeyboardMarkup(resize_keyboard=True)
     markup.row(KeyboardButton("Да"), KeyboardButton("Нет"))
+    markup.row(KeyboardButton("Главное меню"))
     return markup
 
 def get_done_keyboard():
